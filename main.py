@@ -90,4 +90,4 @@ for t in trendler:
 sonuc=c.fetchall()
 
 
-st.table(sonuc)
+st.dataframe(sonuc)
