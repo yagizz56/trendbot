@@ -86,3 +86,8 @@ for t in trendler:
     haberler = t['haberler']
     for h in haberler:
         haberekle(id, h['title'], h['url'], h['resim'], h["kaynak"])
+        c.execute("select * from haberler limit 100")
+sonuc=c.fetchall()
+
+
+st.table(sonuc)
